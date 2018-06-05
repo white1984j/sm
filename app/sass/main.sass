@@ -1,0 +1,831 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+main 
+	overflow-x: hidden
+
+.text-left
+	text-align: left
+.text-right
+	text-align: right
+.text-center
+	text-align: center
+
+.tabs__content
+	display: none
+.tabs__content.active 
+	display: block
+
+.pos-r
+	position: relative
+
+sup
+	font-size: 0.8em
+
+body
+	background: #fff
+	font-family: $EurofontLightC
+	font-size: 24px
+
+.b-logo
+	display: flex
+	align-items: center
+.b-logo__img
+	width: 110px
+	max-width: 100%
+	margin-right: 15px
+	img
+		max-width: 100%
+.b-logo-txt
+	text-transform: uppercase
+	text-align: left
+.b-logo-txt__title
+	font-family: $EurofontMediumC
+	color: #575656
+	font-size: 30px
+	line-height: 1
+.b-logo-txt__subtitle
+	color: #93C01C
+	font-size: 16px
+
+header
+	width: 100%
+	padding-top: 10px
+	.top-line
+		font-family: $EurofontMediumC
+		.top-line-logo img
+			width: auto
+			max-width: 100%
+			height: auto
+		.top-line-phone
+			text-align: left
+			a
+				text-transform: uppercase
+				font-size: 19px
+				color: $active
+		ul
+			list-style: none
+			margin: 36px auto 0
+			li 
+				display: inline-block
+				text-transform: uppercase
+				margin: 0 2px
+				a 
+					font-size: 18px
+					color: $accent
+	.header-video
+		position: relative
+		width: 100%
+	.big_logo
+		position: relative
+		width: 100%
+		height: 100%
+		overflow: hidden
+		top: 0
+		margin-top: 20px
+		padding: 80px 0
+		background: rgba(0,0,0,0.3)
+		h1
+			text-transform: uppercase
+			text-shadow: 1px -1px 5px rgba(0, 0 , 0, 0.8)
+			font-size: 1.6em
+			line-height: 40px
+			font-family: $EurofontMediumC
+			color: #575656
+			span
+				font-size: 0.8em
+				color: #93c01c
+		p
+			color: #fff
+			font-size: 1.3em
+			font-family: $EurofontMediumC
+	.menu
+		padding: 10px 0
+		background: #e6e6e6
+		a 
+			display: block
+			width: 120px
+			font-family: $EurofontMediumC
+			text-transform: uppercase
+			color: $accent
+			font-size: 14px
+			line-height: 20px
+		.action
+			color: $active
+			font-family: $EurofontMediumC
+.link_specify-price
+	margin-top: 48px
+	display: inline-block
+	font-size: 20px
+	float: right
+	font-family: $EurofontMediumC
+	text-transform: uppercase
+	color: #93c01c
+	&:hover
+		color: #93c01c
+
+.bg-slider
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	.slick-list,
+	.slick-track
+		height: 100%
+	.slick-slide
+		height: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+
+section
+	width: 100%
+	margin: 80px 0
+	h1
+		margin: 5px 0 15px
+		font-family: $EurofontMediumC
+		text-transform: uppercase
+		font-size: 28px
+		color: #575656
+	h2
+		margin: 5px 0
+		font-family: $EurofontMediumC
+		text-transform: uppercase
+		font-size: 24px
+		color: #575656
+		span
+			font-size: 20px
+	.description
+		width: 100%
+		margin: 0 auto
+		p,ol
+			max-width: 780px
+			margin: auto
+			text-align: justify
+			font-family: $EurofontLightC
+			font-size: 20px
+	.news-path
+		display: flex
+		align-items: flex-start
+		max-width: 780px
+		margin: 20px auto
+		line-height: 1.1
+		.img
+			float: left
+			margin: 0 20px
+		.news-date
+			display: block
+			padding-top: 10px
+			font-family: $EurofontMediumC
+			font-size: 16px
+		a
+			margin: 0
+			font-family: $EurofontLightC
+			font-size: 21px
+			line-height: 1
+			color: $accent
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.seed_preparation
+		margin-bottom: 40px
+		.seed_preparation_img
+			display: inline-block
+			margin: 0 1px
+			position: relative
+			p 
+				display: block
+				position: absolute
+				top: 50%
+				left: 16px
+				width: 95px
+				height: 40px
+				text-align: center
+				vertical-align: middle
+				text-transform: uppercase
+				font-size: 10px
+				line-height: 10px
+				font-family: $EurofontMediumC
+		.seed_preparation_img+.seed_preparation_img:before
+			display: block
+			position: absolute
+			content: ""
+			left: -9px
+			top: 45px
+			width: 10px
+			height: 5px
+			background: #93c01c
+	.buttons
+		margin-top: 50px
+	.button
+		display: inline-block
+		width: auto
+		margin: 5px 0
+		padding: 10px 25px
+		text-transform: uppercase
+		border: 2px solid $green
+		font-size: 16px
+		color: $accent
+		font-family: $EurofontMediumC
+	.product-img
+		margin-top: 20px
+		height: 110px
+		text-align: center
+		img
+			width: 215px
+			height: auto
+			max-width: 100%
+	.product-img-description
+		h6
+			margin-bottom: 10px
+			text-transform: uppercase
+			text-align: center
+			height: 50px
+			font-family: $EurofontMediumC
+			font-size: 16px
+			color: #575656
+		p 
+			margin-top: 0
+			min-height: 300px
+			font-family: $EurofontLightC
+			font-size: 16px
+			color: #000
+			text-align: justify
+		.button
+			width: 100%
+			text-align: center
+			margin-bottom: 30px
+	.map-russia
+		position: relative
+		margin-top: 40px
+		background: url("../img/bg_russia.png") no-repeat center
+		width: 100%
+		height: 450px
+		.map_russia_path
+			position: absolute
+			p 
+				position: absolute
+				display: block
+				width: 130px
+				text-align: center
+				font-size: 16px
+				line-height: 20px
+				a 
+					color: $green
+		.manager
+			top: 4%
+			left: 35%
+			p 
+				top: 90%
+				left: -100%
+		.matching
+			top: 9%
+			left: 55%
+			p 
+				top: -100%
+				left: -35%
+		.contract
+			top: 45%
+			left: 50%
+			p 
+				top: -100%
+				left: -80%
+		.payment
+			top: 62%
+			left: 28%
+			p 
+				top: -15%
+				left: 100%
+		.delivery
+			top: 73%
+			left: 57%
+	.vacancies
+		margin-top: 40px
+		h6
+			margin: 15px 0 25px
+			font-family: $EurofontMediumC
+			text-transform: uppercase
+			color: #575656
+			font-size: 18px
+		p 
+			font-family: $EurofontLightC
+			color: #000
+			font-size: 17px
+#contact
+	margin-bottom: 0
+	padding-bottom: 60px
+	background: url("../img/bg-footer.jpg") no-repeat top
+	background-size: cover
+	.contact
+		margin: 20px 0
+		min-width: 360px
+		font-family: $EurofontMediumC
+		font-size: 16px
+		color: #575656
+		text-transform: uppercase
+		p 
+			display: block
+			text-align: left
+			margin: 15px auto
+			width: 360px
+		a 
+			color: #575656
+			white-space: nowrap
+			.fa-phone
+				position: relative
+				top: 2px
+		i 
+			display: inline-block
+			margin-right: 10px
+			font-size: 20px
+			color: #93c01c
+	.working
+		margin-top: 100px
+		p
+			font-family: $EurofontLightC
+			font-size: 14px
+form
+	position: relative
+	max-width: 600px
+	margin: 20px auto
+	padding: 15px 10px
+	text-align: center
+	border: 2px solid #fff
+	background: rgba(0,0,0,0.5)
+	.popup-modal-dismiss
+		position: absolute
+		top: 5px
+		right: 15px
+	label, p
+		color: #fff
+		font-size: 16px
+	input, textarea
+		display: block
+		margin: 0 auto
+		background: #eee
+		border: none
+	input[type="submit"]
+		margin-top: 10px
+		background: #fff
+
+.padding-right_none
+	padding-right: 0px
+.padding-left_none
+	padding-left: 0px
+.product-section
+	font-family: $EurofontLightC
+	img
+		max-width: 100%
+	b 
+		font-family: $EurofontMediumC
+.product-section + .product-section
+	margin-top: 60px
+.product-section_big-img
+	img
+		width: 100%
+	overflow: hidden
+.gray-list
+	padding: 15px 15px
+	background: #CCCBCD
+.gray-list + .gray-list
+	padding-top: 0
+.orange-title
+	padding: 25px 0 15px 35px
+	font-size: 50px
+	line-height: 50px
+	background: #E84C0D
+	color: #fff
+	font-family: $EurofontMediumC
+	sup 
+		display: inline-block
+		position: relative
+		top: -25px
+		font-size: 25px
+	p 
+		margin: 0
+.product-section-big-numbers
+	margin-top: 40px
+	font-size: 50px
+	line-height: 50px
+	color: #E84C0D
+.gray-list-text
+	margin-top: -10px
+	padding-left: 35px
+	font-size: 20px
+	font-family: $EurofontMediumC
+.product-section_list-info
+	margin: 25px 0 0
+	p 
+		font-size: 30px
+		line-height: 35px
+	ul
+		list-style-type: disc
+		padding-left: 30px
+.margin-top-30
+	margin-top: 30px
+.green-graph_block
+	width: 100%
+.green-graph_path
+	display: block
+	position: relative
+	width: 100%
+	padding: 10px 50px 10px 15px
+	background: #95C123
+	&:after
+		content: " "
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		height: 100%
+		width: 40px
+		line-height: 55px
+		text-align: center
+		background: #E74C0D
+		background: 
+	&.ten
+		&:after
+			content: "10"
+	&.nine
+		width: calc(100% - 30px)
+		&:after
+			content: "9"
+	&.eight
+		width: calc(100% - 60px)
+		&:after
+			content: "8"
+	&.seven
+		width: calc(100% - 90px)
+		&:after
+			content: "7"
+	&.six
+		width: calc(100% - 120px)
+		&:after
+			content: "6"
+	&.five
+		width: calc(100% - 150px)
+		&:after
+			content: "5"
+.green-graph_path + .green-graph_path
+	margin-top: 2px
+
+.product-section_table
+	margin-top: 30px
+.product-section-text
+	margin: 20px 0
+	sup
+		font-size: 16px
+	&.padding-left
+		padding-left: 100px
+	.color-orange
+		color: #E84C0D
+.block_img-and-text
+	display: inline-block
+	position: relative
+	margin: 0px 0
+	.block_img-and-text_content
+		display: inline-block
+		padding: 15px 20px
+		position: absolute
+		bottom: 40px
+		right: -40px
+		max-width: 100%
+		width: 300px
+		background: #CCCBCD
+		font-size: 18px
+
+.product-section-big-text
+	background: #CCCBCD
+	box-shadow: inset 0px -10px 0 0px #fff
+.product-section_big-img
+	display: inline-block
+	width: 100%
+.product-section_big-img.zarazihe-net
+	position: relative
+	&:after
+		content: " "
+		display: block
+		position: absolute
+		bottom: 30px
+		right: 30px
+		width: 160px
+		height: 160px
+		border-radius: 50%
+		background: url("../img/new-img/sunflower/zarazihe-net.png") no-repeat center
+		background-size: cover
+
+.col-md-1_5
+	width: (20% !important)
+
+
+
+.product-section
+	margin: 60px 0
+	font-size: 18px
+.orange-title
+	padding: 5px 0 5px 20px
+	font-size: 35px
+.gray-list
+	padding: 5px
+	img
+		display: block
+		margin: auto
+		width: 100px
+		height: auto
+.product-section-big-numbers
+	font-size: 35px
+	margin-top: 12px
+.gray-list-text
+	font-size: 18px
+	margin-top: 2px
+	margin-bottom: 0
+.product-section_list-info
+	margin: 10px 0 0 0
+.product-section_list-info p
+	font-size: 22px
+.margin-top-30
+	margin-top: 15px
+.product-section_table
+	margin-top: 15px
+.product-section_big-img
+	text-align: right
+	img
+		height: 100%
+		width: auto
+
+
+.breadcrumbs
+	margin: 20px 0
+.breadcrumbs_ul
+	list-style: none
+	padding: 0
+	margin: 0
+.breadcrumbs_li
+	display: inline-block
+	font-size: 16px
+	& + .breadcrumbs_li
+		&:before
+			content: "/"
+			margin-right: 5px
+	&:last-child
+		pointer-events: none
+		a
+			color: #e95906
+			text-decoration: underline
+.breadcrumbs_link
+	color: #000
+	&:hover
+		color: #000
+
+.catalog_cart-product_section
+	margin: 10px 0 30px
+.catalog_cart-product
+	margin-bottom: 35px
+.cart-product_code
+	padding: 0px 5px
+	text-align: center
+	background: #91BF24
+	font-family: $EurofontMediumC
+	color: #575656
+.cart-product_name
+	text-align: center
+	padding: 10px 5px
+	background: #EEEEEE
+	color: #575656
+	font-size: 20px
+	line-height: 1.2
+	font-family: $EurofontMediumC
+.cart-product_img
+	text-align: center
+	background: #EEEEEE
+	img
+		display: block
+		max-width: 100%
+.cart-product_characteristics
+	padding: 15px 10px 25px
+	background: #EEEEEE
+	font-family: $EurofontMediumC
+	font-size: 14px
+.cart-product_characteristics_table
+	width: 100%
+	table-layout: auto
+	td 
+		padding: 2px 5px
+	td:first-child
+		padding-left: 15px
+		position: relative
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			left: 0px
+			top: 10px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: #E8580B
+	td + td
+		white-space: nowrap
+		font-size: 16px
+		font-family: $EurofontMediumC
+	b 
+		display: inline-block
+		margin-bottom: 5px
+		font-size: 18px
+		font-family: $EurofontMediumC
+.link_more
+	display: block
+	padding: 4px 8px
+	margin-top: 8px
+	font-size: 16px
+	text-transform: uppercase
+	text-align: center
+	border: 2px solid #93c01c
+	font-family: $EurofontMediumC
+	color: #575656
+	&:hover
+		color: #575656
+	
+
+
+.product-detailed_section
+	margin: 15px 0 30px
+
+.product-detailed_txt_wr
+	width: 430px
+	max-width: 100%
+.product-detailed_txt
+	padding: 5px 25px
+	margin-bottom: 15px
+	font-size: 16px
+	background: #EEE
+.product-detailed_txt_table
+	width: 100%
+	table-layout: auto
+	td 
+		padding: 5px 15px
+	td:first-child
+		padding-left: 15px
+		position: relative
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			left: -5px
+			top: 15px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: #E8580B
+	td + td
+		white-space: nowrap
+		font-size: 18px
+		font-family: $EurofontMediumC
+	b 
+		display: inline-block
+		margin-bottom: 5px
+		font-size: 18px
+		font-family: $EurofontMediumC
+
+.product-detailed_img
+	img
+		max-width: 100%
+
+.product-detailed_tabs
+	margin-top: 30px
+	font-family: $EurofontLightC
+	b 
+		font-family: $EurofontMediumC
+	.tabs__caption
+		display: flex
+		list-style: none
+		padding: 0
+		margin: 0
+		li 
+			display: inline-flex
+			min-height: 55px
+			margin-right: 10px
+			padding: 6px 15px
+			border: 5px solid #EEEEEE
+			border-bottom: none
+			font-size: 20px
+			line-height: 1.2
+			align-items: center
+			font-family: $EurofontMediumC
+			text-align: center
+			text-transform: uppercase
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+		li.active
+			background: #EEEEEE
+	.tabs__content
+		padding: 25px 25px
+		background: #EEEEEE
+.product-detailed_tabs__content_path
+	margin-bottom: 20px
+	font-size: 16px
+	ul
+		list-style-type: disc
+		padding-left: 20px
+.product-detailed_graph
+	margin: 10px 0 25px
+	p 
+		font-size: 16px
+		font-family: $EurofontMediumC
+		text-transform: uppercase
+	span
+		display: inline-flex
+		margin: 5px 8px 0 0
+		width: 27px
+		height: 27px
+		justify-content: center
+		align-items: center
+		background: #91BF24
+		font-family: $EurofontMediumC
+		color: rgba(255,255,255,0)
+		&:nth-child(1)
+			background: #FDFFFD
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5)
+			background: #D3E5A4
+	&.one
+		span:nth-child(1)
+			color: #575656
+			& ~ span
+				display: none
+	&.two
+		span:nth-child(2)
+			color: #575656
+			& ~ span
+				display: none
+	&.three
+		span:nth-child(3)
+			color: #575656
+			& ~ span
+				display: none
+	&.four
+		span:nth-child(4)
+			color: #575656
+			& ~ span
+				display: none
+	&.five
+		span:nth-child(5)
+			color: #575656
+			& ~ span
+				display: none
+	&.six
+		span:nth-child(6)
+			color: #575656
+			& ~ span
+				display: none
+	&.seven
+		span:nth-child(7)
+			color: #575656
+			& ~ span
+				display: none
+	&.eight
+		span:nth-child(8)
+			color: #575656
+			& ~ span
+				display: none
+	&.nine
+		span:nth-child(9)
+			color: #575656
+			& ~ span
+				display: none
+
+.product-detailed_table
+	width: 100%
+	table-layot: fixed
+	th
+		font-family: $EurofontMediumC
+		text-transform: uppercase
+		text-align: left
+	th,
+	td 
+		padding: 8px 12px
+
+.product-detailed_code
+	padding: 0px 8%
+	background: #91BF24
+	font-size: 28px
+	font-family: $EurofontMediumC
+	color: #575656
+.product-detailed_name
+	margin-bottom: 20px
+	padding: 5px 8%
+	background: #EEEEEE
+	color: #575656
+	font-size: 24px
+	font-family: $EurofontMediumC
+
+.news-detailed
+	margin-top: 0
+	font-size: 18px
+
+@import "media"
